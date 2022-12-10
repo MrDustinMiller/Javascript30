@@ -18,7 +18,7 @@ function setDate() {
 
   const hoursDegrees = (minutes / 12) * 190;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
-  timeDisplay.textContent = `${now.toLocaleTimeString()}`;
+  // timeDisplay.textContent = `${now.toLocaleTimeString()}`;
 
   if (seconds === 59) {
     hands.forEach((hand) => {
