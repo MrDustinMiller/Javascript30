@@ -8,7 +8,7 @@
 
 ## Learning Opportunity
 
-- Learned about css transitions
+- css transitions
 
 ## 🤝 Support
 

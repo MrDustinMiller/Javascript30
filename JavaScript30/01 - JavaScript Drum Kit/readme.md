@@ -8,7 +8,7 @@
 
 ## Learning Opportunity
 
-- Learned about data attribute
+- html data attribute
 
 ## 🤝 Support
 
