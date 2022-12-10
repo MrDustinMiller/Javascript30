@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="index.js" defer></script>
   <title>JS + CSS Clock</title>
 </head>
 <body>
 
+  <div class="time-section">
+    <h2><span class="time"></span></h2>
+  </div>
 
     <div class="clock">
       <div class="clock-face">
@@ -62,6 +66,21 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)
+    }
+
+    .time {
+      position: absolute;
+      left: 43vw;
+      top: 10vh;
+      font-size: 4rem;
+      color: #06456f;
+    }
+
+    .clock .clock-face .second-hand {
+      background-color: rgb(229, 28, 28);
     }
 
   </style>
