@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="index.js" defer></script>
   <title>Scoped CSS Variables and JS</title>
 </head>
 <body>
@@ -21,6 +22,22 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+
+    :root {
+      --spacing: 10px;
+      --blur: 10px;
+      --base: #ffc600;
+    }
+
+    img {
+      background: var(--base);
+      padding: var(--spacing);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base)
+    }
 
     /*
       misc styles, nothing to do with CSS variables
@@ -42,6 +59,7 @@
     input {
       width: 100px;
     }
+
   </style>
 
   <script>
